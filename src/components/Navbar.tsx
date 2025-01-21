@@ -1,15 +1,19 @@
-type Props = {};
+type Link = {
+  name: string;
+  url: string;
+};
 
-export default function Navbar({ }: Props) {
-  const links = [
-    { name: "home", url: "" },
-    { name: "about", url: "" },
-    { name: "projects", url: "" },
-  ];
+type Props = {
+  links: Link[];
+  page: string;
+  setPage: (value: string) => void;
+};
+
+export default function Navbar({ links, page, setPage }: Props) {
   return (
     <ul className="flex space-x-4">
       {links.map((link) => (
-        <li>
+        <li className="hover:cursor-pointer" onClick={() => setPage(link.name)}>
           <a>{link.name}</a>
         </li>
       ))}
