@@ -1,7 +1,5 @@
-type Props = {}
-
-export default function Projects({}: Props) {
+export default function Projects() {
   return (
-    <div>Projects?</div>
+    <div className="animate-spin">Loading...</div>
   )
 }

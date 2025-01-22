@@ -9,7 +9,7 @@ type Props = {
   setPage: (value: string) => void;
 };
 
-export default function Navbar({ links, page, setPage }: Props) {
+export default function Navbar({ links, setPage }: Props) {
   return (
     <ul className="flex space-x-4">
       {links.map((link) => (

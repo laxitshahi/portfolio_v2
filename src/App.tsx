@@ -26,9 +26,8 @@ function App() {
       <div className="p-10"></div>
       <Links />
 
-      <div className="absolute bottom-0 right-0 text-[10px]">
-
-      <a href="https://v1.laxitshahi.me/">Shh... Secret v1 portfolio</a>
+      <div className="absolute bottom-0 right-0 text-[4px] sm:text-[5px] md:text-[6px] lg:text-[7px] ">
+        <a href="https://v1.laxitshahi.me/">Shh... Secret v1 portfolio</a>
       </div>
     </div>
   );

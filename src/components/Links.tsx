@@ -1,8 +1,5 @@
-import { useState } from "react";
 
-type Props = {};
-
-export default function Links({ }: Props) {
+export default function Links() {
   const links = [
     { name: "@github ", url: "https://github.com/laxitshahi" },
     { name: ".linkedin", url: "https://www.linkedin.com/in/laxitshahi/" },
@@ -14,7 +11,9 @@ export default function Links({ }: Props) {
         <li
           onClick={() => {
             if (link.name == "to:email") {
-              alert("weeooweeoo, speical website unlocked!! Sometimes I wonder if the only purpose of posting your email on your portfolio is to be scrapped. Even that would a wonderous occasion.");
+              alert(
+                "weeooweeoo, speical website unlocked!! Sometimes I wonder if the only purpose of posting your email on your portfolio is to be scrapped. To be scraped, or not to be scraped, tis the question.",
+              );
             }
           }}
         >
