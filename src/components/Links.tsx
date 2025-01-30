@@ -12,7 +12,7 @@ export default function Links() {
           onClick={() => {
             if (link.name == "to:email") {
               alert(
-                "weeooweeoo, speical website unlocked!! Sometimes I wonder if the only purpose of posting your email on your portfolio is to be scrapped. To be scraped, or not to be scraped, tis the question.",
+                "speical website unlocked!! Sometimes I wonder if the only purpose of posting your email on your portfolio is to be scrapped. To be scraped, or not to be scraped, tis the question.",
               );
             }
           }}
