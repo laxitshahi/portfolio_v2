@@ -19,6 +19,7 @@ function App() {
 
       <div className="p-10"></div>
 
+
       {page === "home" && <Home />}
       {page === "about" && <About />}
       {page === "projects" && <Projects />}

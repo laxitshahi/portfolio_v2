@@ -2,6 +2,7 @@ export default function About() {
   return (
     <div className="justify-center">
       <h1 className="text-2xl">A bit about me</h1>
+      <div className="p-4"></div>
       <img className="w-96" src="me.jpg" />
       <span>
         I thought about making a inconceivable portfolio!! Then I realized it's

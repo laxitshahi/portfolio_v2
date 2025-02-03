@@ -19,6 +19,8 @@ export default function Projects() {
 
   return (
     <>
+      <h1 className="text-2xl">Projects</h1>
+      <div className="p-4"></div>
       <ul className="space-y-2">
         {projects.map((proj) => {
           return (
