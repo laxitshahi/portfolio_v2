@@ -2,24 +2,24 @@ export default function Projects() {
   const projects = [
     {
       name: "LLM Proxy",
-      desc: "Capstone project",
+      desc: "Make LLMs simple",
       link: "https://github.com/llm-proxy/llm-proxy",
+    },
+    {
+      name: "Patch",
+      desc: "Price + Match",
+      link: "https://github.com/laxitshahi/patch",
     },
     {
       name: "Portfolio v1",
       desc: "Version 1 portfolio",
       link: "https://v1.laxitshahi.me",
     },
-    {
-      name: "Patch",
-      desc: "First piece of software",
-      link: "https://github.com/laxitshahi/patch",
-    },
   ];
 
   return (
     <>
-      <h1 className="text-2xl">Projects</h1>
+      <h1 className="text-2xl">Rad[ical] projects</h1>
       <div className="p-4"></div>
       <ul className="space-y-2">
         {projects.map((proj) => {

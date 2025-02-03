@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Links from "./components/Links";
+import Secret from "./pages/Secret";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -19,16 +20,18 @@ function App() {
 
       <div className="p-10"></div>
 
-
       {page === "home" && <Home />}
       {page === "about" && <About />}
       {page === "projects" && <Projects />}
+      {page === "secret" && <Secret setPage={setPage} />}
 
       <div className="p-10"></div>
       <Links />
 
       <div className="absolute bottom-0 right-0 text-[4px] sm:text-[5px] md:text-[6px] lg:text-[7px] ">
-        <a href="https://v1.laxitshahi.me/">Shh... Secret v1 portfolio</a>
+        <button onClick={() => setPage("secret")}>
+          Shh... Secret
+        </button>
       </div>
     </div>
   );
